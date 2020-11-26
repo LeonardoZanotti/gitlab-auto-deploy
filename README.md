@@ -1,9 +1,9 @@
 <div style="width: 250px; margin-right: 20px; display: inline-block">
-    <img src="https://docs.gitlab.com/12.10/assets/images/gitlab-logo.svg">
+    <img src="https://docs.gitlab.com/12.10/assets/images/gitlab-logo.svg" width=250>
 </div>
 
 <div style="width: 250px; display: inline-block">
-    <img src="https://pbs.twimg.com/profile_images/700084762799550464/dbPz0Wiw.png">
+    <img src="https://pbs.twimg.com/profile_images/700084762799550464/dbPz0Wiw.png" width=250>
 </div>
 
 
