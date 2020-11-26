@@ -4,7 +4,7 @@
 </div>
 
 
-# Gitlab autodeploy
+# Gitlab auto-deploy
 
 This is a basic guide explaining how to configure auto-deploy in Gitlab to Heroku using Laravel and Vuejs project.
 
@@ -24,11 +24,11 @@ Value:
 PAST HERE THE HEROKU API KEY
 ```
 
-The options in the bottom, check the "Mask variable" option and uncheck the "Protect variable" option. Then click in Add Variable and its done.
+About the options in the bottom, check the "Mask variable" option and uncheck the "Protect variable" option. Then click in Add Variable and its done.
 
 ![](add_variable.png)
 
-Just do the same thing with Heroku name and all right:
+Just do the same thing with Heroku app name and all right:
 
 ```yml
 # HEROKU_APP
@@ -43,6 +43,8 @@ PAST HERE THE HEROKU APP NAME
 # Creating a .gitlab-ci.yml file
 
 Like a docker-compose.yml file, in .gitlab-ci.yml we also need to say which image we will use, and the structure its iqual.
+
+The .gitlab-ci.yml file in this repo is more simple, so you can use it to deploy both the backend and frontend.
 
 Example of .gitlab-ci.yml to php:
 ```yml
@@ -123,8 +125,8 @@ deploy to heroku:
 ```
 
 The description of each label of the Nuxtjs/Vuejs yml:
-- stages: Define the stages to run. We are running two stages, build and deploy.
-- build: Here we build the front, so we use image of node to use npm, then we just run `npm run build`.
+- stages: Define the stages to run. We are running two stages: build and deploy.
+- build: Here we build the front, so we use an image of node to use npm, then we just run `npm run build`.
 - deploy to heroku: Now, we just need to deploy, so we use the ruby image, install dpl and deploy the app.
 
 You will also edit the Procfile file, so Heroku can migrate and install passport again in every deploy automatically, just replace your file by the one in this repo or just paste this:
