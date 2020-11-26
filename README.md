@@ -1,6 +1,10 @@
-<img src="https://docs.gitlab.com/12.10/assets/images/gitlab-logo.svg" width=250 style="margin-right: 20px; display: inline-block">
+<div style="margin-right: 20px; display: inline-block">
+    <img src="https://docs.gitlab.com/12.10/assets/images/gitlab-logo.svg" width=250 >
+</div>
 
-<img src="https://pbs.twimg.com/profile_images/700084762799550464/dbPz0Wiw.png" width=250 style="display: inline-block">
+<div style="display: inline-block">
+    <img src="https://pbs.twimg.com/profile_images/700084762799550464/dbPz0Wiw.png" width=250 >
+</div>
 
 
 # Gitlab autodeploy
